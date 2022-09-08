@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Oswald:wght@200&family=Poppins:wght@200&display=swap');
 /*Her stoppet vi i forelesningen*/
 /**/
 *{
@@ -5,7 +6,8 @@
 }
 body{
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    font-family: 'Poppins', sans-serif;
 }
 
 header nav h3 {
@@ -25,6 +27,11 @@ header nav ul li{
 header nav a{
     color:#000;
     text-decoration: none;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+    color: palegreen;
 }
 
 nav{
@@ -69,8 +76,17 @@ main article{
     margin: 0;
 }
 
+
 #breadcrumbs li{
     display: inline-block;    
+}
+
+#breadcrumbs li:after{
+    content: " > ";
+}
+
+#breadcrumbs li:last-child::after{
+    content: "";
 }
 
 article img{
@@ -89,6 +105,8 @@ footer{
     color: #fff;
     padding: 3rem 2rem;
 }
+
+
 
 
 
